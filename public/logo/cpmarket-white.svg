@@ -1,0 +1,5 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="30" r="25" fill="white"/>
+                    <text x="30" y="38" text-anchor="middle" fill="#667eea" font-family="Arial, sans-serif" font-size="20" font-weight="bold">CP</text>
+                    <text x="70" y="38" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">Market</text>
+                </svg>

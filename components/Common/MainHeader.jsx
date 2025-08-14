@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   MapPin,
@@ -78,19 +79,12 @@ export default function MainHeader() {
               href="/"
               className="flex items-center space-x-3 group cursor-pointer"
             >
-              <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-tr from-emerald-500 via-teal-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all transform group-hover:scale-105">
-                  <Building2 className="w-6 h-6 text-white" />
-                </div>
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-orange-400 rounded-full"></div>
-              </div>
+             
               <div className="block">
                 <h1 className="text-xl lg:text-2xl xl:text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                  CP Market
+                 <Image src="/logo/cpmarket-logo.svg" alt="CPMarket" width={200} height={60} /> 
                 </h1>
-                <p className="text-xs text-blue-500 -mt-1">
-                  Smart Property Solutions
-                </p>
+               
               </div>
             </Link>
 

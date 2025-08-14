@@ -44,12 +44,12 @@ export default function SignupPage() {
     { value: "buyer", label: "Buyer", icon: <User className="w-4 h-4 mr-2" /> },
     {
       value: "seller",
-      label: "Seller",
-      icon: <UserCheck className="w-4 h-4 mr-2" />,
+      label: "Owener",
+      icon: <User className="w-4 h-4 mr-2" />,
     },
     {
       value: "broker",
-      label: "Broker",
+      label: "Agent",
       icon: <UserPen className="w-4 h-4 mr-2" />,
     },
     {

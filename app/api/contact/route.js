@@ -44,6 +44,7 @@ export async function POST(request) {
 
     const body = await request.json();
     const { name, email, subject, message } = body;
+    console.log("i m in contact page ",body)
 
     // Validate input data
     const validationErrors = validateContactData(body);
@@ -66,6 +67,7 @@ export async function POST(request) {
     // Save to database
     const contact = new Contact(contactData);
     const savedContact = await contact.save();
+
 
     return successResponse(
       {
