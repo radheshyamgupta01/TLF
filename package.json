@@ -1,0 +1,52 @@
+{
+  "name": "real-estate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev ",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "axios": "^1.10.0",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.7.0",
+    "clsx": "^2.1.1",
+    "formidable": "^3.5.4",
+    "ioredis": "^5.6.1",
+    "jose": "^6.0.11",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "lucide-react": "^0.525.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.1",
+    "multer": "^2.0.2",
+    "next": "^14.2.30",
+    "next-connect": "^1.0.0",
+    "nextjs-toploader": "^3.8.16",
+    "nodemailer": "^7.0.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-redux": "^9.2.0",
+    "recharts": "^3.0.2",
+    "redis": "^5.5.6",
+    "redux-persist": "^6.0.0",
+    "sharp": "^0.34.3",
+    "slugify": "^1.6.6",
+    "tailwind-merge": "^3.3.1",
+    "tailwind-scrollbar-hide": "^4.0.0",
+    "webpack": "^5.99.9",
+    "zod": "^4.0.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/nodemailer": "^6.4.17",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.4",
+    "tailwindcss": "^4"
+  }
+}

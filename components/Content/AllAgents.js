@@ -1,0 +1,98 @@
+export const AllAgents = [
+  {
+    id: 1,
+    name: "Rajesh Sharma",
+    location: "Mumbai Central",
+    experience: "8 Years",
+    deals: 150,
+    rating: 4.8,
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    specialty: "Luxury Properties",
+    languages: ["Hindi", "English", "Marathi"],
+  },
+  {
+    id: 2,
+    name: "Priya Patel",
+    location: "Pune Baner",
+    experience: "6 Years",
+    deals: 120,
+    rating: 4.9,
+    image:
+      "https://images.unsplash.com/photo-1494790108755-2616b612b167?w=150&h=150&fit=crop&crop=face",
+    specialty: "Commercial Spaces",
+    languages: ["English", "Gujarati", "Hindi"],
+  },
+  {
+    id: 3,
+    name: "Amit Kumar",
+    location: "Delhi NCR",
+    experience: "10 Years",
+    deals: 200,
+    rating: 4.7,
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    specialty: "Residential Villas",
+    languages: ["Hindi", "English", "Punjabi"],
+  },
+  {
+    id: 4,
+    name: "Sneha Reddy",
+    location: "Bangalore HSR",
+    experience: "5 Years",
+    deals: 85,
+    rating: 4.6,
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+    specialty: "IT Hub Properties",
+    languages: ["English", "Telugu", "Kannada"],
+  },
+  {
+    id: 5,
+    name: "Vikram Singh",
+    location: "Gurgaon Sector 45",
+    experience: "12 Years",
+    deals: 300,
+    rating: 4.9,
+    image:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+    specialty: "Investment Properties",
+    languages: ["Hindi", "English"],
+  },
+  {
+    id: 6,
+    name: "Kavya Nair",
+    location: "Chennai Anna Nagar",
+    experience: "7 Years",
+    deals: 140,
+    rating: 4.8,
+    image:
+      "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=150&h=150&fit=crop&crop=face",
+    specialty: "Waterfront Properties",
+    languages: ["Tamil", "English", "Malayalam"],
+  },
+  {
+    id: 7,
+    name: "Arjun Mehta",
+    location: "Ahmedabad SG Highway",
+    experience: "9 Years",
+    deals: 180,
+    rating: 4.7,
+    image:
+      "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=150&h=150&fit=crop&crop=face",
+    specialty: "New Developments",
+    languages: ["Gujarati", "Hindi", "English"],
+  },
+  {
+    id: 8,
+    name: "Ritu Agarwal",
+    location: "Kolkata Salt Lake",
+    experience: "11 Years",
+    deals: 220,
+    rating: 4.8,
+    image:
+      "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=150&h=150&fit=crop&crop=face",
+    specialty: "Heritage Properties",
+    languages: ["Bengali", "Hindi", "English"],
+  },
+];

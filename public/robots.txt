@@ -1,0 +1,37 @@
+/*
+User-agent: *
+Allow: /
+
+# Sitemap
+
+*/
+
+
+
+
+
+User-agent: *
+Allow: /
+Allow: /properties/
+Allow: /property/
+Allow: /search
+Allow: /rent/
+Allow: /sale/
+Allow: /city/
+Allow: /type/
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /admin-dashboard/
+Disallow: /agents-dashboard/
+Disallow: /signin
+Disallow: /signup
+
+# Sitemap
+User-agent: *
+Allow: /
+Sitemap: https://next-js-real-estate-n0n755vik-radheshyams-projects.vercel.app/sitemap.xml
+
+
+# Crawl delay
+Crawl-delay: 1
