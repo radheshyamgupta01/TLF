@@ -161,6 +161,7 @@ export default function SignupPage() {
       // console.log(result);
 
       if (result?.error) {
+        console.log("result",result);
         setErrors({ submit: result.error });
       } else {
         if (result.user.role === "admin") {
@@ -265,9 +266,8 @@ export default function SignupPage() {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleChange}
-                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-200 ${
-                      errors.firstName ? "border-red-500" : "border-gray-300"
-                    }`}
+                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-200 ${errors.firstName ? "border-red-500" : "border-gray-300"
+                      }`}
                     placeholder="John"
                   />
                 </div>
@@ -289,9 +289,8 @@ export default function SignupPage() {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
-                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-200 ${
-                      errors.lastName ? "border-red-500" : "border-gray-300"
-                    }`}
+                    className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-200 ${errors.lastName ? "border-red-500" : "border-gray-300"
+                      }`}
                     placeholder="Doe"
                   />
                 </div>
@@ -312,9 +311,8 @@ export default function SignupPage() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-200 ${
-                    errors.email ? "border-red-500" : "border-gray-300"
-                  }`}
+                  className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-200 ${errors.email ? "border-red-500" : "border-gray-300"
+                    }`}
                   placeholder="john.doe@example.com"
                 />
               </div>
@@ -334,9 +332,8 @@ export default function SignupPage() {
                   name="password"
                   value={formData.password}
                   onChange={handleChange}
-                  className={`w-full pl-10 pr-12 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-200 ${
-                    errors.password ? "border-red-500" : "border-gray-300"
-                  }`}
+                  className={`w-full pl-10 pr-12 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-200 ${errors.password ? "border-red-500" : "border-gray-300"
+                    }`}
                   placeholder="Enter your password"
                 />
                 <button
@@ -384,11 +381,10 @@ export default function SignupPage() {
                   name="confirmPassword"
                   value={formData.confirmPassword}
                   onChange={handleChange}
-                  className={`w-full pl-10 pr-12 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-200 ${
-                    errors.confirmPassword
+                  className={`w-full pl-10 pr-12 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-200 ${errors.confirmPassword
                       ? "border-red-500"
                       : "border-gray-300"
-                  }`}
+                    }`}
                   placeholder="Confirm your password"
                 />
                 <button
@@ -425,9 +421,8 @@ export default function SignupPage() {
               <button
                 onClick={() => setIsOpen((prev) => !prev)}
                 type="button"
-                className={`flex items-center justify-between w-full px-4 py-3 border rounded-lg text-left bg-white shadow-sm transition-all duration-200 ${
-                  errors.userType ? "border-red-500" : "border-gray-300"
-                } focus:outline-none focus:ring-2 focus:ring-purple-500`}
+                className={`flex items-center justify-between w-full px-4 py-3 border rounded-lg text-left bg-white shadow-sm transition-all duration-200 ${errors.userType ? "border-red-500" : "border-gray-300"
+                  } focus:outline-none focus:ring-2 focus:ring-purple-500`}
               >
                 <span className="flex items-center text-gray-700">
                   {selected?.icon || (

@@ -5,6 +5,7 @@ import {
   MapPin,
   ChevronDown, Plus,
   User,
+  LogIn,DollarSign,
   Menu,
   X,
   Building2,
@@ -129,6 +130,44 @@ export default function MainHeader() {
 
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
+
+            <Link href="/Homeloan"  className="   group flex items-center space-x-2 px-3 py-2 lg:px-4 text-gray-700 hover:text-blue-600 font-medium transition-all duration-200 hover:bg-blue-50 rounded-xl" >
+            
+          
+        
+             
+            
+              <DollarSign className="w-4 h-4 text-gray-500 group-hover:text-blue-600 transition-colors duration-200" />
+               <span className="text-sm lg:text-base">Home Loan</span> 
+            
+            
+            
+            </Link>
+            
+
+            {user ? (
+              <button
+                onClick={handleLogout}
+                disabled={isLoading}
+                className="flex text-slate-700 items-center cursor-pointer space-x-2 border border-slate-300 hover:border-slate-400 px-4 py-2.5 rounded-lg transition-all hover:shadow-md"
+              >
+                {isLoading ? "Logging out..." : "Logout"}
+              </button>
+            ) : (
+              <Link
+                href="/login"
+
+              >
+                <button
+                  className="  group flex items-center space-x-2 px-3 py-2 lg:px-4 text-gray-700 hover:text-green-600 font-medium transition-all duration-200 hover:bg-green-50 rounded-xl"
+                >
+                  <LogIn className="w-4 h-4 text-gray-500 group-hover:text-green-600 transition-colors duration-200" />
+                  <span>Login / Sign Up</span>
+                </button>
+              </Link>
+            )}
+
+
             <Link
               href="/post-property"
 
@@ -144,26 +183,6 @@ export default function MainHeader() {
                 </span>
               </button>
             </Link>
-
-            {user ? (
-              <button
-                onClick={handleLogout}
-                disabled={isLoading}
-                className="flex text-slate-700 items-center cursor-pointer space-x-2 border border-slate-300 hover:border-slate-400 px-4 py-2.5 rounded-lg transition-all hover:shadow-md"
-              >
-                {isLoading ? "Logging out..." : "Logout"}
-              </button>
-            ) : (
-              <Link
-                href="/login"
-                className="cursor-pointer flex items-center space-x-2 border border-slate-300 hover:border-slate-400 px-4 py-2.5 rounded-lg transition-all hover:shadow-md"
-              >
-                <User className="w-4 h-4 text-slate-600" />
-                <span className="text-sm font-medium text-slate-700">
-                  Sign In
-                </span>
-              </Link>
-            )}
           </div>
 
           {/* Mobile Menu Toggle */}

@@ -22,10 +22,7 @@ export const metadata = {
     "cpmarket - Smart Property Solutions | Buy, Sell, Rent Properties in India",
   description:
     "Find, sell, and rent properties easily with cpmarket. India's trusted real estate platform with verified listings, expert agents, and smart property solutions. Start your property journey today.",
-  authors: [
-    { name: "cpmarket Team" },
-    { name: "Shubham S Nimje", url: "https://nimje.org/shubham-s-nimje" },
-  ],
+ 
   creator: "cpmarket",
   publisher: "cpmarket",
   category: "Real Estate",
@@ -102,7 +99,7 @@ export const metadata = {
   },
 
   // Manifest
-  manifest: "/site.webmanifest",
+  // manifest: "/site.webmanifest",
 
   // Alternate languages (if applicable)
   alternates: {
