@@ -50,7 +50,7 @@ const RealEstateDashboard = () => {
   // If not admin, show access denied
   if (accessDenied) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center font-serif">
         <div className="bg-white rounded-xl shadow-lg p-8 max-w-md w-full mx-4 text-center">
           <Shield size={64} className="mx-auto text-red-500 mb-4" />
           <h2 className="text-2xl font-bold text-gray-900 mb-2">
@@ -142,7 +142,7 @@ const RealEstateDashboard = () => {
       >
         <div className="flex items-center justify-between p-6 border-b">
           <div>
-            <h1 className="text-xl font-bold text-gray-900">RealEstate Pro</h1>
+            <h1 className="text-xl font-bold text-gray-900">CP Market</h1>
             <span className="text-xs text-blue-600 font-medium">
               Admin Panel
             </span>

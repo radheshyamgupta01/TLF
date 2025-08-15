@@ -92,7 +92,7 @@ const PropertySchema = new mongoose.Schema(
     // Pricing
     pricing: {
       price: {
-        type: Number,
+        type: String,
         required: true,
         min: 0,
       },
@@ -100,11 +100,11 @@ const PropertySchema = new mongoose.Schema(
         type: String,
       },
       maintenanceCharges: {
-        type: Number,
+        type: String,
         default: 0,
       },
       securityDeposit: {
-        type: Number,
+        type: String,
         default: 0,
       },
     },
