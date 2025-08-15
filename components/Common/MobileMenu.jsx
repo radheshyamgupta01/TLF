@@ -48,7 +48,7 @@ const MobileMenu = ({
             <span>Contact</span>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="#"
             className="flex items-center px-4 py-4 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-200 font-medium group"
@@ -57,7 +57,7 @@ const MobileMenu = ({
             <DollarSign className="w-5 h-5 mr-4 text-gray-500 group-hover:text-blue-600 transition-colors duration-200" />
             <span>Home Loan Services</span>
           </a>
-        </li>
+        </li> */}
      
 
           <li>

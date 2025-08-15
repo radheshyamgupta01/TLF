@@ -6,13 +6,15 @@ import {
   MapPin,
   ChevronDown, Plus,
   User,
-  LogIn,DollarSign,
+  LogIn, DollarSign,Contact,
   Menu,
   X,
   Building2,
   Home,
   Key,
   TrendingUp,
+  HomeIcon,
+  Contact2,
 } from "lucide-react";
 import MobileMenu from "./MobileMenu";
 import { useDispatch, useSelector } from "react-redux";
@@ -26,15 +28,7 @@ const tabs = [
   { id: "invest", label: "Invest", icon: Building2 },
 ];
 
-const locations = [
-  "Mumbai",
-  "Delhi",
-  "Bangalore",
-  "Chennai",
-  "Hyderabad",
-  "Pune",
-  "Kolkata",
-];
+
 
 export default function MainHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -79,12 +73,12 @@ export default function MainHeader() {
               href="/"
               className="flex items-center space-x-3 group cursor-pointer"
             >
-             
+
               <div className="block">
                 <h1 className="text-xl lg:text-2xl xl:text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                 <Image src="/logo/cpmarket-logo.svg" alt="CPMarket" width={200} height={60} /> 
+                  <Image src="/logo/cpmarket-logo.svg" alt="CPMarket" width={200} height={60} priority />
                 </h1>
-               
+
               </div>
             </Link>
 
@@ -125,19 +119,21 @@ export default function MainHeader() {
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
 
-            <Link href="/Homeloan"  className="   group flex items-center space-x-2 px-3 py-2 lg:px-4 text-gray-700 hover:text-blue-600 font-medium transition-all duration-200 hover:bg-blue-50 rounded-xl" >
-            
-          
-        
-             
-            
-              <DollarSign className="w-4 h-4 text-gray-500 group-hover:text-blue-600 transition-colors duration-200" />
-               <span className="text-sm lg:text-base">Home Loan</span> 
-            
-            
-            
+
+
+            <Link href="/" className="   group flex items-center space-x-2 px-3 py-2 lg:px-4 text-gray-700 hover:text-blue-600 font-medium transition-all duration-200 hover:bg-blue-50 rounded-xl" >
+              <HomeIcon className="w-4 h-4 text-gray-500 group-hover:text-blue-600 transition-colors duration-200" />
+              <span className="text-sm lg:text-base">Home </span>
             </Link>
-            
+              <Link href="/contact-us" className="   group flex items-center space-x-2 px-3 py-2 lg:px-4 text-gray-700 hover:text-blue-600 font-medium transition-all duration-200 hover:bg-blue-50 rounded-xl" >
+              <Contact2 className="w-4 h-4 text-gray-500 group-hover:text-blue-600 transition-colors duration-200" />
+              <span className="text-sm lg:text-base">Contact </span>
+            </Link>
+            {/* <Link href="/Homeloan" className="   group flex items-center space-x-2 px-3 py-2 lg:px-4 text-gray-700 hover:text-blue-600 font-medium transition-all duration-200 hover:bg-blue-50 rounded-xl" >
+              <DollarSign className="w-4 h-4 text-gray-500 group-hover:text-blue-600 transition-colors duration-200" />
+              <span className="text-sm lg:text-base">Home Loan</span>
+            </Link> */}
+
 
             {user ? (
               <button

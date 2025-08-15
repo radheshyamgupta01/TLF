@@ -99,7 +99,7 @@ export const metadata = {
   },
 
   // Manifest
-  // manifest: "/site.webmanifest",
+  manifest: "/site.webmanifest",
 
   // Alternate languages (if applicable)
   alternates: {
