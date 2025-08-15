@@ -3,10 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-sans: Arial, Helvetica, sans-serif;
-  --font-mono: monospace;
+  --font-sans: sans-serif;
+  
 }
-
+* {
+  font-family: serif;
+}
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -18,4 +20,5 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+   font-family: serif;
 }

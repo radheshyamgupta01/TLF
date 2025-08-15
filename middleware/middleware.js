@@ -43,10 +43,12 @@
 
 
 import { NextRequest, NextResponse } from "next/server";
+import cors from "cors";
 
 export function middleware(request) { // Add request parameter
   // Add CORS headers for API routes
   if (request.nextUrl.pathname.startsWith("/api/")) {
+ 
     // Handle preflight requests first
     if (request.method === "OPTIONS") {
       return new NextResponse(null, { 

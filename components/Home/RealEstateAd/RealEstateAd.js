@@ -8,7 +8,7 @@ import InquiryForm from "@/components/property/InquiryForm";
 const RealEstateAd = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
   return (
-    <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white overflow-hidden">
+    <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 font-serif to-purple-900 text-white overflow-hidden">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black opacity-30"></div>
 

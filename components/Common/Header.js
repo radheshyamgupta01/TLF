@@ -4,7 +4,7 @@ import MainHeader from "./MainHeader";
 
 const Header = () => {
   return (
-    <div className="relative">
+    <div className="relative font-serif">
       {/* <TopContactBar /> */}
       <MainHeader />
     </div>

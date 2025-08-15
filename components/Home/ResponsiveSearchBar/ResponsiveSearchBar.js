@@ -36,7 +36,7 @@ const ResponsiveSearchBar = () => {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-10  mb-10">
+    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-10  mb-10 font-serif ">
       {/* Main Search Container */}
       <div
         className={`bg-white rounded-2xl border-2 transition-all duration-300 ${

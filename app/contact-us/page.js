@@ -57,7 +57,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 font-serif">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -79,7 +79,7 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="flex-shrink-0">
+                {/* <div className="flex-shrink-0">
                   <svg
                     className="w-6 h-6 text-blue-600"
                     fill="none"
@@ -99,15 +99,15 @@ export default function ContactPage() {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                </div>
-                <div className="ml-4">
+                </div> */}
+                {/* <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Address</h3>
                   <p className="text-gray-600">
                     123 Business Street
                     <br />
                     City, State 12345
                   </p>
-                </div>
+                </div> */}
               </div>
 
               <div className="flex items-start">

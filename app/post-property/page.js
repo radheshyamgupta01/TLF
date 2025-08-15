@@ -523,7 +523,7 @@ const PropertyPostComponent = () => {
 
   if (isSuccess) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 font-serif to-indigo-100 flex items-center justify-center p-4">
         <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 text-center">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
             <Check className="w-8 h-8 text-green-600" />
@@ -543,7 +543,7 @@ const PropertyPostComponent = () => {
   }
 
   const renderStep1 = () => (
-    <div className="space-y-6">
+    <div className="space-y-6 font-serif">
       <div className="text-center mb-6">
         <Home className="w-16 h-16 text-blue-600 mx-auto mb-2" />
         <h2 className="text-2xl font-bold text-gray-800">Basic Information</h2>
@@ -642,7 +642,7 @@ const PropertyPostComponent = () => {
   );
 
   const renderStep2 = () => (
-    <div className="space-y-6">
+    <div className="space-y-6  font-serif">
       <div className="text-center mb-6">
         <MapPin className="w-16 h-16 text-blue-600 mx-auto mb-2" />
         <h2 className="text-2xl font-bold text-gray-800">Location & Details</h2>
@@ -880,7 +880,7 @@ const PropertyPostComponent = () => {
   );
 
   const renderStep3 = () => (
-    <div className="space-y-6">
+    <div className="space-y-6 font-serif ">
       <div className="text-center mb-6">
         <DollarSign className="w-16 h-16 text-blue-600 mx-auto mb-2" />
         <h2 className="text-2xl font-bold text-gray-800">Pricing & Contact</h2>
@@ -1039,7 +1039,7 @@ const PropertyPostComponent = () => {
   );
 
   const renderStep4 = () => (
-    <div className="space-y-6">
+    <div className="space-y-6 font-serif">
       <div className="text-center mb-6">
         <Image className="w-16 h-16 text-blue-600 mx-auto mb-2" />
         <h2 className="text-2xl font-bold text-gray-800">Property Images *</h2>
@@ -1094,8 +1094,8 @@ const PropertyPostComponent = () => {
   );
 
   return (
-    <ProtectedRoute className="min-h-screen bg-gray-50 py-6 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <ProtectedRoute className="min-h-screen font-serif bg-gray-50 py-6 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto font-serif">
         {/* Progress Bar */}
         <div className="mb-8">
           <div className="flex items-center justify-between">

@@ -13,7 +13,19 @@ const nextConfig = {
     formats: ["image/webp", "image/avif"],
   },
   async rewrites() {
+
+
+    
+
+
+
     return [
+
+      
+      {
+        source: '/api/:path*',
+        destination: 'https://cpmarket.in/:path*',
+      },
       // SEO-friendly URLs
       {
         source: "/rent/:city",
