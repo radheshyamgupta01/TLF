@@ -893,7 +893,7 @@ const PropertyPostComponent = () => {
             Price *
           </label>
           <input
-            type="number"
+            type="text"
             className={`w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
               validationErrors.price ? "border-red-500" : "border-gray-300"
             }`}
@@ -928,7 +928,7 @@ const PropertyPostComponent = () => {
             Maintenance Charges *
           </label>
           <input
-            type="number"
+            type="text"
             className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             placeholder="Monthly maintenance"
             value={formData.maintenanceCharges}
@@ -943,7 +943,7 @@ const PropertyPostComponent = () => {
             Security Deposit *
           </label>
           <input
-            type="number"
+            type="text"
             className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             placeholder="Security deposit amount"
             value={formData.securityDeposit}

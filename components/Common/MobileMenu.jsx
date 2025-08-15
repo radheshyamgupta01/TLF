@@ -1,5 +1,5 @@
 "use client";
-import { User, DollarSign, LogIn, Plus, Contact, ArrowBigDown, Home, UserCheck2 } from "lucide-react";
+import { User, DollarSign, LogIn, Plus, Contact, ArrowBigDown, Home,LogOut, UserCheck2 } from "lucide-react";
 import Link from "next/link";
 
 const MobileMenu = ({
@@ -12,7 +12,7 @@ const MobileMenu = ({
   return (
     <div className="absolute top-full left-0 w-full bg-white shadow-md p-4 z-50 lg:hidden">
       <ul className="space-y-2">
-         <li>
+        <li>
           <a
             href="/"
             className="flex items-center px-4 py-4 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-200 font-medium group"
@@ -22,8 +22,8 @@ const MobileMenu = ({
             <span>Home</span>
           </a>
         </li>
-     
-          <li>
+
+        <li>
           <a
             href="/about"
             className="flex items-center px-4 py-4 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-200 font-medium group"
@@ -33,12 +33,12 @@ const MobileMenu = ({
             <span>About</span>
           </a>
         </li>
-       
 
 
 
 
-          <li>
+
+        <li>
           <a
             href="/contact-us"
             className="flex items-center px-4 py-4 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-200 font-medium group"
@@ -58,40 +58,45 @@ const MobileMenu = ({
             <span>Home Loan Services</span>
           </a>
         </li> */}
-     
 
-          <li>
 
-            {user ? (
+        <li>
+
+          {user ? (
+            <button
+              onClick={handleLogout}
+              disabled={isLoading}
+              className="  group flex items-center space-x-2 px-3 py-2 lg:px-4 text-gray-700 hover:text-green-600 font-medium transition-all duration-200 hover:bg-green-50 rounded-xl"
+            >
+
+
+
+              <LogOut className="w-4 h-4 text-gray-500 group-hover:text-green-600 transition-colors duration-200" />
+              <span>    {isLoading ? "Logging out..." : "Logout"}</span>
+
+            </button>
+          ) : (
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              href="/login"
+
+            >
               <button
-                onClick={handleLogout}
-                disabled={isLoading}
-                className="flex text-slate-700 items-center cursor-pointer space-x-2 border border-slate-300 hover:border-slate-400 px-4 py-2.5 rounded-lg transition-all hover:shadow-md"
+                className="flex items-center px-4 py-4 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-xl transition-all duration-200 font-medium text-left w-full group"
+
               >
-                {isLoading ? "Logging out..." : "Logout"}
+                <LogIn className="w-5 h-5 mr-4 text-gray-500 group-hover:text-green-600 transition-colors duration-200" />
+                <span>Login / Sign Up</span>
               </button>
-            ) : (
-              <Link
-                onClick={() => setIsMenuOpen(false)}
-                href="/login"
 
-              >
-                <button
-                  className="flex items-center px-4 py-4 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-xl transition-all duration-200 font-medium text-left w-full group"
-
-                >
-                  <LogIn className="w-5 h-5 mr-4 text-gray-500 group-hover:text-green-600 transition-colors duration-200" />
-                  <span>Login / Sign Up</span>
-                </button>
-
-              </Link>
-            )}
+            </Link>
+          )}
 
 
 
-          </li>
+        </li>
 
-       
+
       </ul>
       <hr className=" my-4" />
       <div className="">

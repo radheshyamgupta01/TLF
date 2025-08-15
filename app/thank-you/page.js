@@ -41,7 +41,7 @@ const ThankYouPage = () => {
 
           {/* Go to Dashboard */}
           <button
-            onClick={() => handleNavigate("/post-property")}
+            onClick={() => handleNavigate("/agents-dashboard")}
             className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 group"
           >
             <Home className="w-5 h-5" />
